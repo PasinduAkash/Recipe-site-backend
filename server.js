@@ -47,8 +47,11 @@ app.post("/api/edit/:id", (req, res) => {
   Recipes.findByIdAndUpdate(id, update, (err) => {
     if (err) {
       console.log(err);
+<<<<<<< HEAD
     } else {
       res.send("success");
+=======
+>>>>>>> b5ae5c5548b2513d03a3cfd8fa85ec0ed759fa8b
     }
   });
 });
@@ -60,8 +63,11 @@ app.delete("/api/deletedocument/:id", (req, res) => {
       console.log(err);
     }
   });
+<<<<<<< HEAD
 
   res.send("success");
+=======
+>>>>>>> b5ae5c5548b2513d03a3cfd8fa85ec0ed759fa8b
 });
 
 app.listen(PORT, () => {
